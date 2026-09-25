@@ -24,6 +24,7 @@
       "electron-main.cjs",
       "preload.cjs",
       "icon.ico",
+      "icon.png",
       "dist/**/*"
     ],
     "win": {
