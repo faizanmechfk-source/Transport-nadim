@@ -18,7 +18,7 @@
       "electron-main.cjs",
       "preload.cjs",
       "icon.ico",
-      "../dist/**/*"
+      "dist/**/*"
     ],
     "win": {
       "target": [

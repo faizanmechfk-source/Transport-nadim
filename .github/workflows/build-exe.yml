@@ -29,17 +29,19 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
 
       - name: Install Web App Dependencies
-        run: npm install
+        run: npm install --legacy-peer-deps
 
       - name: Build Web Application (Vite Production Build)
         run: npm run build
 
+      - name: Prepare Desktop Dist Assets
+        run: node -e "const fs = require('fs'); fs.cpSync('dist', 'desktop/dist', {recursive: true}); console.log('Copied dist to desktop/dist');"
+
       - name: Install Desktop / Electron Dependencies
         working-directory: desktop
-        run: npm install
+        run: npm install --legacy-peer-deps
 
       - name: Package Windows .EXE (NSIS Setup & Portable)
         working-directory: desktop

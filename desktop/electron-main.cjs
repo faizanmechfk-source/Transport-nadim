@@ -88,11 +88,11 @@ function createMainWindow() {
     },
   });
 
-  let indexPath = path.join(__dirname, '../dist/index.html');
+  let indexPath = path.join(__dirname, 'dist/index.html');
   if (!fs.existsSync(indexPath)) {
-    const localDist = path.join(__dirname, 'dist/index.html');
-    if (fs.existsSync(localDist)) {
-      indexPath = localDist;
+    const parentDist = path.join(__dirname, '../dist/index.html');
+    if (fs.existsSync(parentDist)) {
+      indexPath = parentDist;
     } else {
       indexPath = path.join(app.getAppPath(), 'dist/index.html');
     }
