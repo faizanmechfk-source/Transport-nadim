@@ -1,7 +1,12 @@
 {
-  "name": "react-example",
+  "name": "transport-entry",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "author": "Transport Entry",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/faizanmechfk-source/Transport-nadim.git"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite --port=3000 --host=0.0.0.0",

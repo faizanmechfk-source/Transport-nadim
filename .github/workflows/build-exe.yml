@@ -45,9 +45,7 @@ jobs:
 
       - name: Package Windows .EXE (NSIS Setup & Portable)
         working-directory: desktop
-        run: npm run dist
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npx electron-builder --win --publish never
 
       - name: List Generated Build Files
         shell: bash
