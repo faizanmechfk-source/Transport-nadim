@@ -1,0 +1,6 @@
+{
+  "name": "Transport Entry",
+  "description": "Production-ready Transport Management and Transport Entry system for transport operators, booking offices, and billing staff with Bilty, Memo, Medical entries, Match-Up reconciliation, and Month-End statements.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
