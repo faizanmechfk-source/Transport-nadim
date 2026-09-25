@@ -37,7 +37,7 @@ jobs:
         run: npm run build
 
       - name: Prepare Desktop Dist Assets
-        run: node -e "const fs = require('fs'); fs.cpSync('dist', 'desktop/dist', {recursive: true}); console.log('Copied dist to desktop/dist');"
+        run: node scripts/prepare-desktop.cjs
 
       - name: Install Desktop / Electron Dependencies
         working-directory: desktop
